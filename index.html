@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- choose language type englesh -->
+
+<head>
+
+    <title>u19074362 Assignment 1</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- link my style stylesheet -->
+</head>
+
+<body>
+    <!-- create cardbox1 -->
+    <div class="cardbox">
+        <h3>Module Information</h3>
+        <div>
+            <div>
+                <form>
+                    <div>
+                        <label>Module Code:</label>
+                        <input type="text" id="ModuleCode" id="textbox" />
+                    </div>
+                    <div>
+                        <label>Module Lecture:</label>
+                        <input type="text" id="ModuleLecturer" id="textbox" />
+                    </div>
+                    <div>
+                        <input type="button" onclick="AddModule()" id="AddButton" value="Add" />
+                        <!-- create function that will be linked to button inside form -->
+                    </div>
+                </form>
+            </div>
+
+            <div class="cardbox-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Module Code</th>
+                            <th>Module Lecturer </th>
+                            <!-- <th>Time stamp </th> -->
+                        </tr>
+                    </thead>
+                    <tbody id="modTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardbox">
+        <h3>Task</h3>
+        <div>
+            <div>
+                <form>
+                    <div>
+                        <label>Task Name:</label>
+                        <input type="text" id="TaskName" id="textbox"/>
+                    </div>
+                    <div>
+                        <label for="TaskDueDate">Task Due Date:</label>
+                       
+                        <input type="date" id="TaskDueDate" name="TaskDueDate" id="textbox">
+                    </div>
+                    <div>
+                        <input type="button" onclick="AddTask()" id="AddButton" value="Add" />
+                        <!-- create function that will be linked to button inside form -->
+                    </div>
+                </form>
+            </div>
+
+            <div class="cardbox-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task Name:</th>
+                            <th>Task Due Date </th>
+                            <!-- <th>Time stamp </th> -->
+                        </tr>
+                    </thead>
+                    <tbody id="TaskTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cardbox">
+        <h3>To Do List</h3>
+        <div>
+            <div>
+                <form>
+                    <div>
+                        <label for="TaskTodo">Module Code:</label>
+                        <select name="TaskOption" class="ModulecodeTask" id="textbox"> 
+                            <option value="Option1"  id="ModulecodeTask"></option>
+                           
+                          </select>
+                    </div>
+                    <div>
+                        <label for="TaskTodo">Task:</label>
+                        <select name="TaskOption" id="textbox">
+                            <option value="Option2"  class="ModulecodeTask2"></option>
+                           
+                          </select>
+                       
+                    </div>
+                    <div>
+                        <label>Description</label>
+                        <input type="text" id="Description" id="textbox"/>
+                    </div>
+                    <div>
+                        <input type="button" onclick="AddTodoList()" id="AddButton" value="Add" />
+                        <!-- create function that will be linked to button inside form -->
+                    </div>
+                </form>
+            </div>
+
+            <div class="cardbox-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="MC">Module Code</th>
+                            <th>Task </th>
+                            <th>Description </th>
+                            <th>Task Due Date </th>
+                            <!-- <th>Time stamp </th> -->
+                        </tr>
+                    </thead>
+                    <tbody id="TaskTableBodyTodo"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

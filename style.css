@@ -1,0 +1,95 @@
+body {
+
+	color: rgb(62, 189, 176);
+    cursor: pointer;
+}
+
+input,
+select {
+	color: rgb(0, 128, 126);
+}
+
+.cardbox {
+	margin: 20px auto;
+	padding: 25px;
+	width: 350px;
+	border:rgb(20, 189, 211) solid 2px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px 0px rgb(57, 118, 158);
+	transition: box-shadow rgb(57, 118, 158) ease, transform rgb(57, 118, 158) ease;
+}
+
+.cardbox:hover {
+	transform: scale(1.02);
+	box-shadow: 3px 3px 35px 0px rgb(57, 118, 158);
+	transition: box-shadow ease, transform  ease;
+}
+
+form > div {
+	margin: 6px 0px;
+}
+
+table,
+table td,
+table th {
+	padding: 5px 15px;
+	border-collapse: collapse;
+}
+
+thead,
+thead tr,
+thead th {
+	background-color: rgb(39, 98, 138);
+	border-top: solid 1px rgb(39, 98, 138);
+	border-bottom: solid 1px rgb(39, 98, 138);
+	text-size-adjust: 13;
+}
+
+input {
+	width: 50%;
+	justify-content: center;
+	justify-items: center;
+
+
+}
+
+table > tbody.deletable > tr {
+	transition: background-color rgb(39, 98, 138), color rgb(39, 98, 138) ease;
+}
+
+table > tbody.deletable > tr:hover {
+	background-color: lightcoral;
+	color: #ffffff;
+	cursor: pointer;
+
+	transition: background-color var(--induration) ease, color var(--induration) ease;
+}
+#AddButton{
+    color: rgb(209, 217, 223);
+	width: 15.5%;
+	background-color:rgb(39, 98, 138);
+}
+
+#textbox{
+	width: 50%;
+	justify-content: center;
+	justify-items: center;
+}
+
+label {
+	display: inline-block;
+	width: 150px;
+	text-align: left;
+  }
+
+  #taskoption{
+
+	width: 50%;
+	justify-content: center;
+	justify-items: center;
+}
+  
+
+/* input,button{
+    background-color: rgb(39, 98, 138);
+} */
